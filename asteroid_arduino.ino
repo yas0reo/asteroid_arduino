@@ -7,9 +7,12 @@
 
 MicroOscSlip<128> monOsc(&Serial);
 Chrono chronoPot;
+Bounce2::Button bouton;
 
+#define POTENTIOMETER_PIN A3
 void setup()
 {
+    Serial.begin(115200);
     pinMode(3, OUTPUT);
 }
 
